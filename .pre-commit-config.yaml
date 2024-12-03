@@ -19,4 +19,4 @@ repos:
         entry: bash -c 'py -m pip freeze > requirements.txt; git add requirements.txt'
         language: system
         pass_filenames: false
-        stages: [commit]
+        stages: [pre-commit]

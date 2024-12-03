@@ -15,4 +15,5 @@ Instruções:
 4. Install and configure pre-commit
 
 5. Create file requirements from freeze: 
-    --> py -m pip freeze > requirements.txt 
+    --> py -m pip freeze > requirements.txt
+    --> adding config to pre-commit file to always save the requiremnts.txt with news packages intall
