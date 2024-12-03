@@ -7,5 +7,5 @@ Instruções:
 2. Create virtual environment and activate
     --> python -m venv venv (virtualenv -p python3 venv in linux)
     --> ./venv/Scripts/activate
-    ==> (If does not work)cmd to execute in powershell like admin to liberate policies: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+    --> (If does not work)cmd to execute in powershell like admin to liberate policies: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
