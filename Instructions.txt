@@ -13,3 +13,6 @@ Instruções:
 3. Install autopep8(go to settings formatter and select default formatter: autopep8) e pylint extensions
 
 4. Install and configure pre-commit
+
+5. Create file requirements from freeze: 
+    --> py -m pip freeze > requirements.txt 
