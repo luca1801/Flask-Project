@@ -1,7 +1,7 @@
 """
 Implementação de classe Funcionarios
 """
-# pylint: disable=C0116,C0303,C0301,C0103
+# pylint: disable=C0116,C0303,C0301,C0103, C0116
 
 
 class Funcionario():
