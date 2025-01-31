@@ -1,0 +1,1 @@
+FLASK_APP=c:/Users/Lucas/Desktop/python/Python_automacao/src/run.py

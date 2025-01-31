@@ -1,0 +1,43 @@
+{% extends "funcionarios/base.html" %}
+
+{% block titulo %}
+Perfil do Funcionario
+{% endblock titulo %}
+
+{% block conteudo %}
+<div class="card">
+    <div class="card-header">
+        <h5>Dados do Funcionario</h5>
+        <div class="container mt-5">
+            <div class="card">
+            <div class="row g-0">
+                <!-- Left Side: Profile -->
+                <div class="col-md-8">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                    <img src="/static/img/avatar_profile_geral.png" alt="Profile Image" class="profile-img me-3" style="width:25%">
+                        <div class="row">
+                            <h5 class="card-title">{{funcionarios.nome}}</h5><br>
+                            <div class="col">
+                                <p class="card-text"><b>Sexo: </b>{{funcionarios.sexo}}</p>
+                                <p class="card-text"><b>CPF: </b> {{funcionarios.cpf}}</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text"><b>Empresa: </b> {{funcionarios.empresa}}</p>
+                                <p class="card-text"><b>Data de Nascimento: </b> {{funcionarios.data_nasc.strftime("%d/%m/%Y")}}</p>
+                            </div>
+                            <div class="col">
+                                <p class="card-text"><b>Cargo: </b> {{funcionarios.cargo}}</p>
+                                <p class="card-text"><b>Email: </b> {{funcionarios.email}}</p>
+                            </div>
+                            <!--<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock conteudo %}

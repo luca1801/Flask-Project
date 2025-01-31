@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% block titulo %}
+
+            {% endblock titulo %}
+        </title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+    </head>
+    <body>
+        <main class="container">
+            {% block conteudo %}
+        
+            {% endblock conteudo %}
+        </main>
+    </body>
+</html>

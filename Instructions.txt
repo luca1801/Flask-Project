@@ -19,3 +19,24 @@ Instruções:
     --> adding config to pre-commit file to always save the requiremnts.txt with news packages intall
         (not working)
 
+6. comand for git ignoring pycache files: git rm --cached */__pycache__/*
+
+7. install Flask-sqlalchemy
+
+8. Instala banco de dados que vai usar, no caso Postgresql
+
+9. import Postgresql client for python: py -m pip install "psycopg[binary]"
+
+10. install Flask-Migrate for migrations :
+    --> pip install flask-Migrate
+    --> comand init migrations: flask db init
+    10.1. Config FLASK_APP environment for 'flask db init' works
+        --> create .flaskenv file
+        --> add FLASK_APP= 'caminho completo do arquivo executa o flask'
+        --> pip install python-dotenv
+
+11. Flask fb init -----> flask db migrate ------> flask db upgrade
+
+12. add folder static for css files like boostrap and javasript scripts
+
+12. usar biblioteca flask-wtf para uso do wtforms

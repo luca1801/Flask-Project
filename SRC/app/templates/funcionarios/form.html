@@ -1,0 +1,80 @@
+{% extends "/funcionarios/base.html" %}
+
+{% block titulo %}
+Cadastro de Funcionarios
+{% endblock titulo %}
+
+{% block conteudo %}
+<h1>Formulario de Cadastro</h1>
+<form method="post">
+    {{ form.csrf_token }}
+    <div class="form-group">
+        <label>Nome: </label>
+        {{ form.nome (class='form-control') }}
+
+        {% if form.errors.nome %}
+        <div class="alert alert-danger">
+            {{ form.errors.nome }}
+        </div>
+        {% endif %}
+        
+    </div>
+    <div class="form-group">
+        <label>Sexo: </label>
+        {{ form.sexo (class='form-control')}}
+        {% if form.errors.sexo %}
+        <div class="alert alert-danger">
+            {{ form.errors.sexo }}
+        </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label>Data de Nascimento: </label>
+        {{ form.data_nasc (class='form-control')}}
+        {% if form.errors.data_nasc %}
+        <div class="alert alert-danger">
+            {{ form.errors.data_nasc }}
+        </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label>CPF: </label>
+        {{ form.cpf (class='form-control')}}
+        {% if form.errors.cpf %}
+        <div class="alert alert-danger">
+            {{ form.errors.cpf }}
+        </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label>Empresa: </label>
+        {{ form.empresa (class='form-control')}}
+        {% if form.errors.empresa %}
+        <div class="alert alert-danger">
+            {{ form.errors.empresa }}
+        </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label>Cargo: </label>
+        {{ form.cargo (class='form-control')}}
+        {% if form.errors.cargo %}
+        <div class="alert alert-danger">
+            {{ form.errors.cargo }}
+        </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label>Email: </label>
+        {{ form.email (class='form-control')}}
+        {% if form.errors.email %}
+        <div class="alert alert-danger">
+            {{ form.errors.email }}
+        </div>
+        {% endif %}
+    </div>
+    <br><br>
+    <button class="btn btn-primary" type="submit">Cadastrar</class></button>
+</form>
+
+{% endblock conteudo %}

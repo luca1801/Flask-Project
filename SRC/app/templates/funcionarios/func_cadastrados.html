@@ -1,0 +1,36 @@
+{% extends "/funcionarios/base.html" %}
+
+{% block titulo %}
+Cadastro de Funcionarios
+{% endblock titulo %}
+
+{% block conteudo %}
+<h1>Gestão de Funcionários</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Empresa</th>
+            <th>Cargo</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in funcionarios %}
+        <tr>
+            <td><a class="link-offset-2 link-underline link-underline-opacity-0" 
+                href="{{ url_for('funcionarios.listar_func', idd=i.id)}}">{{i.nome}}</a>
+            </td>
+            <td>{{i.empresa}}</td>
+            <td>{{i.cargo}}</td>
+            <td>
+                <a class="link-offset-2 link-underline link-underline-opacity-0" 
+                href="{{ url_for('editar.editar_func', idd=i.id)}}">Editar</a>
+                <a href="#">Remover</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock conteudo %}
