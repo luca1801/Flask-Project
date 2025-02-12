@@ -5,7 +5,9 @@ Cadastro de Funcionarios
 {% endblock titulo %}
 
 {% block conteudo %}
+
 <h1>Gestão de Funcionários</h1>
+<a href="{{ url_for('cadastro.register_func') }}"><button class="btn btn-primary">Cadastrar novo Funcionario</button></a>
 <table class="table">
     <thead>
         <tr>
@@ -26,11 +28,24 @@ Cadastro de Funcionarios
             <td>
                 <a class="link-offset-2 link-underline link-underline-opacity-0" 
                 href="{{ url_for('editar.editar_func', idd=i.id)}}">Editar</a>
-                <a href="#">Remover</a>
+                <a class="link-offset-2 link-underline link-underline-opacity-0"
+                href="{{ url_for('remover.remover_func', idd=i.id)}}">Remover</a>
             </td>
         </tr>
         {% endfor %}
     </tbody>
 </table>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+               {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                </button>  
+            </div>
+            <!-- <script src="{{ url_for('static', filename='js/main.js') }}"></script> -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
 
 {% endblock conteudo %}
