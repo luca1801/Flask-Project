@@ -18,13 +18,13 @@ This project is designed to help manage employee data efficiently. It provides a
 ### Project Structure
 The project is organized into several modules:
 
-**Models:** Defines the database models for the application.
-**Views:** Contains the route handlers and view functions for the application.
-**Forms:** Defines the forms used in the application.
-**Services:** Contains the business logic for manipulating data from the models.
-**Templates:** Contains the HTML templates for rendering the views.
-**Static:** Contains static files such as CSS, JavaScript, and images.
-**log** Contains logs file with actions, info, warning and erros
+- **Models:** Defines the database models for the application.
+- **Views:** Contains the route handlers and view functions for the application.
+- **Forms:** Defines the forms used in the application.
+- **Services:** Contains the business logic for manipulating data from the models.
+- **Templates:** Contains the HTML templates for rendering the views.
+- **Static:** Contains static files such as CSS, JavaScript, and images.
+- **log** Contains logs file with actions, info, warning and erros
 
 ## Technologies Used
 
