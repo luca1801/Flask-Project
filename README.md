@@ -5,7 +5,7 @@ Flask-Project is a web application built with Flask for managing employees. The 
 ## Table of Contents
 
 - [Project Description](#project-description)
-- [Features](#features)
+- [Technologies Used](#Technologies-Used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -15,16 +15,27 @@ Flask-Project is a web application built with Flask for managing employees. The 
 
 This project is designed to help manage employee data efficiently. It provides a user-friendly interface for performing CRUD (Create, Read, Update, Delete) operations on employee records. The application uses Flask for the backend, SQLAlchemy for database(Postgress) interactions, and Bootstrap for styling.
 
-## Features
+### Project Structure
+The project is organized into several modules:
 
-- List all employees
-- View details of a specific employee
-- Register a new employee
-- Edit employee details
-- Remove an employee
-- Logging for tracking actions and errors
-- CSRF protection for secure form submissions
-- Multi-language support with Flask-Babel
+**Models:** Defines the database models for the application.
+**Views:** Contains the route handlers and view functions for the application.
+**Forms:** Defines the forms used in the application.
+**Services:** Contains the business logic for manipulating data from the models.
+**Templates:** Contains the HTML templates for rendering the views.
+**Static:** Contains static files such as CSS, JavaScript, and images.
+**log** Contains logs file with actions, info, warning and erros
+
+## Technologies Used
+
+- **Flask:** A lightweight WSGI web application framework.
+- **SQLAlchemy:** An SQL toolkit and Object-Relational Mapping (ORM) library for Python.
+- **Flask-Migrate:** Handles SQLAlchemy database migrations for Flask applications using Alembic.
+- **Flask-WTF:** Simple integration of Flask and WTForms, including CSRF protection.
+- **Logging:** Track actions and errors for better debugging and monitoring.
+- **CSRF:** protection for secure form submissions using Flask-WTF.
+- **Multi-language support:** Enable multi-language support with Flask-Babel
+- **Bootstrap:** A popular front-end framework for developing responsive and mobile-first websites.
 
   ## Installation
 
