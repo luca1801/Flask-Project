@@ -3652,3 +3652,60 @@ INFO in _internal: 127.0.0.1 - - [11/Feb/2025 22:31:49] "[36mGET /static/bootst
 INFO in _internal: 127.0.0.1 - - [11/Feb/2025 22:31:49] "[36mGET /static/bootstrap-5.3.3/css/bootstrap.css HTTP/1.1[0m" 304 -
 [2025-02-11 22:31:49,142] None requested None
 INFO in _internal: 127.0.0.1 - - [11/Feb/2025 22:31:49] "[36mGET /static/bootstrap-5.3.3/css/bootstrap.css.map HTTP/1.1[0m" 304 -
+[2025-02-11 23:54:56,421] None requested None
+INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+[2025-02-11 23:54:56,422] None requested None
+INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-02-11 23:54:56,428] None requested None
+INFO in _internal:  * Restarting with stat
+[2025-02-11 23:54:59,037] None requested None
+WARNING in _internal:  * Debugger is active!
+[2025-02-11 23:54:59,080] None requested None
+INFO in _internal:  * Debugger PIN: 112-578-085
+[2025-02-11 23:55:23,249] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:23] "[32mGET /funcionarios HTTP/1.1[0m" 308 -
+[2025-02-11 23:55:23,258] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/
+INFO in Funcionarios: View: user acessed listar_func
+[2025-02-11 23:55:23,259] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/
+INFO in func_service: Services: Fetching all funcionarios
+[2025-02-11 23:55:23,441] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:23] "GET /funcionarios/ HTTP/1.1" 200 -
+[2025-02-11 23:55:23,761] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:23] "GET /static/bootstrap-5.3.3/css/bootstrap.css HTTP/1.1" 200 -
+[2025-02-11 23:55:23,844] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:23] "GET /static/bootstrap-5.3.3/css/bootstrap.css.map HTTP/1.1" 200 -
+[2025-02-11 23:55:23,916] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-02-11 23:55:46,583] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/28/
+INFO in Funcionarios: View: user acessed listar_func
+[2025-02-11 23:55:46,584] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/28/
+INFO in func_service: Service: Fetching details for funcionario with id: 28
+[2025-02-11 23:55:46,596] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:46] "GET /funcionarios/28/ HTTP/1.1" 200 -
+[2025-02-11 23:55:46,612] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:46] "[36mGET /static/bootstrap-5.3.3/css/bootstrap.css HTTP/1.1[0m" 304 -
+[2025-02-11 23:55:46,621] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:46] "GET /static/img/avatar_profile_geral.png HTTP/1.1" 200 -
+[2025-02-11 23:55:50,540] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/16/
+INFO in Funcionarios: View: user acessed listar_func
+[2025-02-11 23:55:50,540] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/16/
+INFO in func_service: Service: Fetching details for funcionario with id: 16
+[2025-02-11 23:55:50,543] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:50] "GET /funcionarios/16/ HTTP/1.1" 200 -
+[2025-02-11 23:55:50,557] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:50] "[36mGET /static/bootstrap-5.3.3/css/bootstrap.css HTTP/1.1[0m" 304 -
+[2025-02-11 23:55:50,559] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:50] "[36mGET /static/img/avatar_profile_geral.png HTTP/1.1[0m" 304 -
+[2025-02-11 23:55:53,646] 192.168.1.5 requested http://192.168.1.5:5000/funcionarios/editar/28/
+INFO in func_service: Service: Fetching details for funcionario with id: 28
+[2025-02-11 23:55:53,660] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:53] "GET /funcionarios/editar/28/ HTTP/1.1" 200 -
+[2025-02-11 23:55:53,678] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:53] "[36mGET /static/bootstrap-5.3.3/css/bootstrap.css HTTP/1.1[0m" 304 -
+[2025-02-11 23:55:58,183] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:58] "GET /funcionarios/register_func/ HTTP/1.1" 200 -
+[2025-02-11 23:55:58,196] None requested None
+INFO in _internal: 192.168.1.5 - - [11/Feb/2025 23:55:58] "[36mGET /static/bootstrap-5.3.3/css/bootstrap.css HTTP/1.1[0m" 304 -
